@@ -29,6 +29,8 @@
     <link rel="stylesheet" href="css/responsive.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css" />
+    
+   
 
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -283,6 +285,30 @@
     <script src="js/isotope.min.js"></script>
     <script src="js/images-loded.min.js"></script>
     <script src="js/custom.js"></script>
+    <!-- Firebase SDK for Analytics -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyAi2S3mmIVWzTPgP4WgMXcOXJDGehSIyEw",
+        authDomain: "currencyconverter-76e77.firebaseapp.com",
+        databaseURL: "https://currencyconverter-76e77.firebaseio.com",
+        projectId: "currencyconverter-76e77",
+        storageBucket: "currencyconverter-76e77.appspot.com",
+        messagingSenderId: "510672222043",
+        appId: "1:510672222043:web:5afde11a9979e828bc0c7e",
+        measurementId: "G-3BVHHLN51X"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
 	
 </body>
 
